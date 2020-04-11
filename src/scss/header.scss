@@ -51,13 +51,11 @@
 }
 
 .header-menu svg {
-	width: 16px;
 	height: 16px;
 	fill: $white;
 	margin-right: 10px;
 
 	@media (max-width: 825px) {
-		width: 20px;
 		height: 20px;
 		margin: 8px 0px;
 	}
