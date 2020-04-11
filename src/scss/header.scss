@@ -40,12 +40,16 @@
 
 .header-menu {
 	display: flex;
-	height: 72px;
 	align-items: center;
 	justify-content: center;
+	height: 72px;
 
 	@media (max-width: 825px) {
-		transform: translateY(calc(100vh - 64px));
+		overflow: hidden;
+		position: fixed;
+		bottom: 0;
+		width: 100%;
+		height: auto;
 		justify-content: space-around;
 	}
 }
