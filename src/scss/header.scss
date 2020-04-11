@@ -1,3 +1,119 @@
-h1 {
-	color: red;
+.header {
+	position: fixed;
+	top: 0;
+    width: 100vw;
+	height: 72px;
+	background-color: $black;
+	z-index: 999;
+}
+
+.header-logo {
+	position: absolute;
+	left: 24px;
+	@include centerY;
+	height: 28px;
+
+	&.smaller {
+		height: 20px;
+
+		@media (max-width: 825px) {
+			left: initial;
+			@include centerXY;
+		}
+	}
+}
+
+.header-login {
+	position: absolute;
+	right: 44px;
+	@include centerY;
+	padding: 10px 20px;
+	border: 1px solid $white;
+	color: $white;
+	text-decoration: none;
+
+	&:hover {
+		background-color: $white;
+		color: $black;
+	}
+}
+
+.header-menu {
+	display: flex;
+	height: 72px;
+	align-items: center;
+	justify-content: center;
+
+	@media (max-width: 825px) {
+		transform: translateY(calc(100vh - 64px));
+		justify-content: space-around;
+	}
+}
+
+.header-menu svg {
+	height: 16px;
+	color: $white;
+	margin-right: 10px;
+
+	@media (max-width: 825px) {
+		height: 20px;
+		margin: 8px 0px;
+	}
+}
+
+.header-menu a {
+	display: flex;
+	align-items: flex-end;
+	font-size: 14px;
+	letter-spacing: 1.42px;
+	text-decoration: none;
+	color: $white;
+	padding: 12px 20px;
+
+	@media (max-width: 825px) {
+		justify-content: center;
+		width: 25%;
+		padding: 10px 0px;
+		background-color: $black;
+	}
+
+	&:hover {
+		border-bottom: 1px solid $white;
+
+		@media (max-width: 825px) {
+			border-bottom: 8px;
+			border-top: 1px solid $white;
+		}
+	}
+
+	p {
+		font-weight: 700px;
+
+		@media (max-width: 825px) {
+			display: none;
+		}
+	}
+}
+
+.header-profile {
+	display: flex;
+	align-items: center;
+	position: absolute;
+	right: 8px;
+	@include centerY;
+	padding: 8px 16px;
+	cursor: pointer;
+}
+
+.header-profile-name {
+	margin-right: 16px;
+
+	@media (max-width: 1000px) {
+		display: none;
+	}
+}
+
+.header-profile-picture {
+	height: 36px;
+	border-radius: 50px;
 }

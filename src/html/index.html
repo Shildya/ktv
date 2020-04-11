@@ -1,12 +1,53 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../scss/style.scss">
-    <title>Document</title>
+    <title>kTV+ - Index</title>
 </head>
 <body>
-    <h1>Hello World!<h1>
+    <!-- HEADER -->
+    <header class="header">
+        <!-- HEADER LOGO -->
+        <svg version="1.1" class="header-logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"	 viewBox="0 0 87.58 27.22" style="enable-background:new 0 0 87.58 27.22;" xml:space="preserve"><style type="text/css">	.st0{fill:#F9F9F9;}	.st1{fill:#1B54E7;}</style><path class="st0" d="M0,0l4.32,0l0,17.1l6.66-7.16l5.54,0l-7.42,7.85l7.88,9.43l-5.72,0L4.39,18.4l-0.07,0l0,8.82l-4.32,0L0,0z	 M26.38,5.84l-7.81,0l0-4.1l20.16,0l0,4.1l-7.81,0l0,21.38l-4.54,0L26.38,5.84z M40.3,1.73l5.22,0L52.46,21l7.17-19.26l4.9,0	l-10.3,25.49l-3.92,0L40.3,1.73z"/><path class="st1" d="M75.99,14.48l0-7.92l3.67,0l0,7.92l7.92,0l0,3.67l-7.92,0l0,7.92l-3.67,0l0-7.92l-7.92,0l0-3.67L75.99,14.48z"	/></svg>
+        <!-- LOGIN BUTTON -->
+        <a href="home.html" class="header-login">S'IDENTIFIER</a>
+    </header>
+
+    <main>
+        <!-- FREE TRIAL SECTION -->
+        <section class="free-trial">
+            <svg version="1.1" class="free-trial-logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"	 viewBox="0 0 87.58 27.22" style="enable-background:new 0 0 87.58 27.22;" xml:space="preserve"><style type="text/css">	.st0{fill:#F9F9F9;}	.st1{fill:#1B54E7;}</style><path class="st0" d="M0,0l4.32,0l0,17.1l6.66-7.16l5.54,0l-7.42,7.85l7.88,9.43l-5.72,0L4.39,18.4l-0.07,0l0,8.82l-4.32,0L0,0z	 M26.38,5.84l-7.81,0l0-4.1l20.16,0l0,4.1l-7.81,0l0,21.38l-4.54,0L26.38,5.84z M40.3,1.73l5.22,0L52.46,21l7.17-19.26l4.9,0	l-10.3,25.49l-3.92,0L40.3,1.73z"/><path class="st1" d="M75.99,14.48l0-7.92l3.67,0l0,7.92l7.92,0l0,3.67l-7.92,0l0,7.92l-3.67,0l0-7.92l-7.92,0l0-3.67L75.99,14.48z"	/></svg>
+            <p class="free-trial-catchPhrase">Regardez vos films et séries en illimité.</p>
+            <a href="home.html" class="free-trial-button">ESSAI GRATUIT 7 JOURS</a>
+            <div class="free-trial-movies">
+                <img src="../img/mandalorian-movie.jpg" alt="mandalorian-movie-picture">
+                <img src="../img/avengers-movie.jpg" alt="avengers-movie-picture">
+                <img src="../img/joker-movie.jpg" alt="joker-movie-picture">
+            </div>
+        </section>
+        <!-- DESCRIPTION SECTION -->
+        <section class="description">
+            <!-- TV DESCRIPTION -->
+            <div class="description__container tv">
+                <h2 class="description-title">Vos films et séries sur votre TV</h2>
+                <p class="description-text">Regardez vos films et séries sur votre Smart TV, PlayStation, Xbox, Chromecast, Apple TV, Nintendo Switch et bien plus.</p>
+            </div>
+            <img class="description-picture tv" src="../img/tv.png" alt="TV picture">
+            <!-- SCREENS DESCRIPTION -->
+            <div class="description__container screens">
+                <h2 class="description-title">Sur n'importe quel écran</h2>
+                <p class="description-text screens">Regardez vos films et séries sur votre TV, smartphone, tablette et ordinateur, tout compris.</p>
+            </div>
+            <img class="description-picture screens" src="../img/screens.png" alt="screens picture">
+            <!-- DOWNLOADS DESCRIPTION -->
+            <div class="description__container downloads">
+                <h2 class="description-title">Même en hors ligne</h2>
+                <p class="description-text">Téléchargez vos séries préférées pour les regarder hors connexion.</p>
+            </div>
+            <img class="description-picture downloads" src="../img/downloads.png" alt="TV picture">
+        </section>
+    </main>
 </body>
 </html>

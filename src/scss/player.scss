@@ -1,0 +1,87 @@
+.player {
+    display: none;
+    width: 100%;
+    height: calc(100vh - 72px);
+    background-color: $darkblue;
+    top: 72px;
+
+    &.visible {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+
+        @media (max-width: 1700px) {
+            flex-direction: column;
+            height: fit-content;
+        }
+    }
+}
+
+.close-icon {
+    display: none;
+    position: absolute;
+    right: 0;
+    padding: 20px;
+    cursor: pointer;
+
+    &.visible {
+        display: block;
+    }
+}
+
+.movie-video {
+    min-width: 280px;
+    width: 40vw;
+    padding: 60px;
+
+    @media (max-width: 1700px) {
+        width: 80vw;
+        padding: 100px 0px 0px 0px;
+    }
+}
+
+.movie-info__container {
+    display: flex;
+    flex-direction: column;
+    max-width: 820px;
+    padding: 60px;
+}
+
+.movie-title {
+    font-size: 36px;
+    font-weight: 700;
+
+    @media (max-width: 700px) {
+        font-size: 24px;
+    }
+}
+
+.movie-vote {
+    font-size: 20px;
+    font-style: italic;
+    margin: 20px 0px;
+
+    @media (max-width: 700px) {
+        font-size: 12px;
+    }
+}
+
+.movie-description {
+    font-size: 24px;
+    line-height: 1.25;
+
+    @media (max-width: 700px) {
+        font-size: 16px;
+    }
+}
+
+.movie-release-date {
+    font-size: 20px;
+    font-style: italic;
+    margin-top: 20px;
+
+    @media (max-width: 700px) {
+        font-size: 12px;
+    }
+}
