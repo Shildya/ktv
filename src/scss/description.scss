@@ -9,6 +9,7 @@
     grid-row-gap: 120px;
     align-items: center;
     justify-items: center;
+    overflow: hidden;
     
     // MOBILE
     @media (max-width: 1200px) {
@@ -36,6 +37,10 @@
     font-size: 32px;
     font-weight: 700;
     letter-spacing: 1.42px;
+
+    @media (max-width: 700px) {
+        font-size: 20px;
+    }  
 }
 
 .description-text {
@@ -43,10 +48,12 @@
     font-size: 20px;
     margin-top: 20px;
     line-height: 1.5;
-
-    @media (max-width: 1200px) {
-        width: initial;
-    }  
+    
+    @media (max-width: 700px) {
+        font-size: 16px;
+        width: auto;
+        padding: 0px 40px;
+    }
 }
 
 .description-picture {
@@ -65,6 +72,10 @@
     }
 
     @media (max-width: 1200px) {
-        margin: 80px 60px;
+        padding: 70px 50px;
+    }
+
+    @media (max-width: 700px) {
+        width: 70vw;
     }
 }

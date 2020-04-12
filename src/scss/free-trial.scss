@@ -3,15 +3,19 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100vw;
     height: calc(100vh - 72px);
     background-image: url('../img/movies-background.jpg');
     background-size: cover;
     background-position: center;
+    overflow: hidden;
 }
 
 .free-trial-logo {
     height: 60px;
+
+    @media (max-width: 420px) {
+        height: 40px;
+    }
 }
 
 .free-trial-catchPhrase {
@@ -22,7 +26,7 @@
     line-height: 1.5;
 
     @media (max-width: 420px) {
-        font-size: 28px;
+        font-size: 20px;
     }
 }
 
@@ -42,7 +46,7 @@
     }
 
     @media (max-width: 420px) {
-        font-size: 16px;
+        font-size: 12px;
     }
 }
 
