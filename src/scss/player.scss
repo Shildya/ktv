@@ -31,13 +31,18 @@
 }
 
 .movie-video {
+    grid-area: 1 / 1 / 2 / 2;
     min-width: 280px;
     width: 40vw;
-    padding: 60px;
+    margin: 60px;
 
     @media (max-width: 1700px) {
         width: 80vw;
-        padding: 100px 0px 0px 0px;
+        margin: 100px 0px 0px 0px;
+    }
+
+    &.fullscreen {
+        width: 100vw;
     }
 }
 
@@ -85,3 +90,4 @@
         font-size: 12px;
     }
 }
+
