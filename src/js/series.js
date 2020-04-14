@@ -45,7 +45,7 @@ categories.forEach(category => {
                 var img = document.createElement('img'); 
                 img.src = `https://image.tmdb.org/t/p/w185${result.poster_path}`;
                 img.classList.add('movie');
-                document.querySelector(`.${category}`).appendChild(img);
+                document.querySelector(`.${category}-series`).appendChild(img);
                 img.addEventListener('click', () => {
                     document.querySelector('.movie-title').innerHTML = result.name;
                     document.querySelector('.movie-description').innerHTML = result.overview;
